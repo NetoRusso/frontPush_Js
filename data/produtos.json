@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "nome": "Notebook Dell",
+    "Modelo": "Gaming",
+    "Quantidade": 5
+  },
+  {
+    "id": "2",
+    "nome": "Notebook Acer",
+    "Modelo": "Gaming",
+    "Quantidade": 10
+  }
+]

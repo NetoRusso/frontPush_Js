@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import '_reset';
+
+$font-family: 'Roboto', sans-serif;
+$bg-dark: #05010c;
+$white: #f2f2f2;
+$gray: #777777;
+$green: #1f8063;
+
+@mixin texto($tamanho) {
+  @if $tamanho =="h1" {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.8;
+  }
+
+  @else if $tamanho =="h2" {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  @else if $tamanho =="h3" {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  @else if $tamanho =="p" {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: $bg-dark;
+  color: $white;
+  font-family: $font-family;
+  font-size: clamp(0.875rem, 0.6667rem + 0.9259vw, 1.5rem);
+}

@@ -1,0 +1,243 @@
+@import 'complementos/_variaveis';
+
+.container { 
+  max-width: 1440px;
+  min-height: 500px;
+  height: auto;
+  margin: 24px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  .titulo {
+    @include texto("h2");
+    color: $white;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      color: $white;
+      opacity: .8;
+      scale: .98;
+      transition: all 200ms ease-in-out;
+    }
+  }
+
+  p {
+    @include texto("p");
+    color: $white;
+    text-align: left;
+    align-self: flex-start;
+    width: 60%;
+    margin: 0 auto;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    .aula-index { 
+      color: $gray;
+      font-weight: 700;
+
+      &:hover {
+        cursor: pointer;
+        color: $white;
+      }
+
+      &.active {
+        color: $green;
+      }
+    }
+
+    .acesso-btn { 
+      color: $white;
+      width: 100px;
+      text-decoration: none;
+      cursor: pointer;
+      user-select: none;
+      font-size: 0.8rem;
+      padding: 4px 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      background-color: $gray;
+
+      &:hover {
+        cursor: pointer;
+        color: $white;
+        opacity: .8;
+        scale: .98;
+        transition: all 200ms ease-in-out;
+      }
+
+    }
+  }
+
+  ul {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+}
+
+// .count {
+//   width: 100%;
+//   height: auto;
+//   margin: 32px auto;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 16px;
+
+//   .count-title { 
+//     @include texto("h2");
+//     color: $white;
+//   }
+
+//   .count-label {
+//     @include texto("h3");
+//     color: $white;
+//   }
+
+//   input { 
+//     width: 300px;
+//     height: 32px;
+//     padding: 8px;
+//     border-radius: 8px;
+//     font-size: 16px;
+//   }
+
+//   button {
+//     width: 128px;
+//     height: 32px;
+//     border-radius: 8px;
+//     font-size: 16px;
+//     font-weight: 600;
+
+//     &:hover {
+//       cursor: pointer;
+//       scale: .9;
+//       background-color: $bg-dark;
+//       color: $white;
+//       transition: all 200ms ease-in-out;
+//       outline: none;
+//     }
+
+//     &:disabled {
+//       cursor: not-allowed;
+//       background-color: $gray;
+//       color: $white;
+//       &:hover {
+//         scale: 1;
+//         cursor: not-allowed;
+//         background-color: $gray;
+//         color: $white;
+//       }
+//     }
+//   }
+
+//   .resultado {
+//     display: none;
+//     @include texto("p");
+//   }
+
+//   .acumulado {
+//     line-height: 1.5;
+//   }
+
+//   .tabela { 
+//     width: auto;
+//     max-width: 80%;
+//     height: auto;
+//     margin: 32px auto;
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//     justify-content: center;
+//     align-content: center;
+//     align-items: center;
+//     justify-items: center;
+//     gap: 16px;
+
+//     .grid-item { 
+//       width: 300px;
+//       height: 150px;
+//       border: 2px solid $gray;
+//       border-radius: 8px;
+//       align-content: center;
+//       text-align: center;
+//       font-weight: 600;
+//       color: $white;
+
+//       &:hover {
+//         cursor: pointer;
+//         scale: .98;
+//         background-color: $gray;
+//         color: $white;
+//         transition: all 200ms ease-in-out;
+//       }
+
+//       &.active { 
+//         cursor: none;
+//         background: green;
+
+//       }
+//     }
+//   }
+  
+// }
+
+.container-2 { 
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: $gray;
+    border-radius: 8px;
+    margin: 32px auto;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      scale: .98;
+      border: 1px solid $white;
+    }
+
+    &.r {
+      background-color: red;
+    }
+
+    &.g {
+      background-color: green;
+    }
+
+    &.b {
+      background-color: blue;
+    }
+
+    &.y {
+      background-color: yellow;
+    }
+
+    &.active {
+      transform: rotate(45deg);
+      background-color: #008000;
+    }
+  }
+}
+

@@ -95,270 +95,365 @@ aulas.forEach(aula => {
   aula.addEventListener("click", selecionarAula);
 })
 
-// titulo.setAttribute('test', 'e Agora?');
+//atributos
+{
+  /*
+  titulo.setAttribute('test', 'e Agora?');
+  titulo.setAttribute('data-test', 'Novo Atributo');
+  */
+}
 
-// titulo.setAttribute('data-test', 'Novo Atributo');
 
 //estilizando o link por js
-// {
-// let link = document.createElement('a');
+{
+  /*
+let link = document.createElement('a');
 
-// link.href = "https://www.google.com";
-// let conteudo = document.createTextNode("Google");
-// link.target = "_blank";
-
-
-// Object.assign(link.style, {
-//   "display": "flex",
-//   "justifyContent": "center",
-//   "alignItems": "center",
-//   "width": "128px",
-//   "height": "32px",
-//   "borderRadius": "8px",
-//   "fontSize": "24px",
-//   "fontWeight": "600",
-//   "textDecoration": "none",
-//   "color": "#f2f2f2",
-//   "backgroundColor": "#1f8063",
-//   "cursor": "pointer",
-//   "userSelect": "none",
-//   "transition": "all 200ms ease-in-out",
-//   "textAlign": "center",
-// })
-
-// link.addEventListener("mouseover", () => {
-//   Object.assign(link.style, {
-//     "display": "flex",
-//     "justifyContent": "center",
-//     "alignItems": "center",
-//     "width": "128px",
-//     "height": "32px",
-//     "borderRadius": "8px",
-//     "fontSize": "24px",
-//     "fontWeight": "600",
-//     "textDecoration": "none",
-//     "color": "#1a1a1a",
-//     "cursor": "pointer",
-//     "userSelect": "none",
-//     "transition": "all 200ms ease-in-out",
-//     "textAlign": "center",
-//     "scale": ".9",
-//     "backgroundColor": "#cccccc",
-//     "Transition": "all 200ms ease-in-out",
-//   })
-// })
-
-// link.addEventListener("mouseout", () => {
-//   Object.assign(link.style, {
-//     "display": "flex",
-//     "justifyContent": "center",
-//     "alignItems": "center",
-//     "width": "128px",
-//     "height": "32px",
-//     "borderRadius": "8px",
-//     "fontSize": "24px",
-//     "fontWeight": "600",
-//     "textDecoration": "none",
-//     "color": "#f2f2f2",
-//     "backgroundColor": "#1f8063",
-//     "scale": "1",
-//     "cursor": "pointer",
-//     "userSelect": "none",
-//     "transition": "all 200ms ease-in-out",
-//     "textAlign": "center",
-//     "Transition": "all 200ms ease-in-out",
-//   })
-// })
+link.href = "https://www.google.com";
+let conteudo = document.createTextNode("Google");
+link.target = "_blank";
 
 
+Object.assign(link.style, {
+  "display": "flex",
+  "justifyContent": "center",
+  "alignItems": "center",
+  "width": "128px",
+  "height": "32px",
+  "borderRadius": "8px",
+  "fontSize": "24px",
+  "fontWeight": "600",
+  "textDecoration": "none",
+  "color": "#f2f2f2",
+  "backgroundColor": "#1f8063",
+  "cursor": "pointer",
+  "userSelect": "none",
+  "transition": "all 200ms ease-in-out",
+  "textAlign": "center",
+})
 
-// link.appendChild(conteudo);
+link.addEventListener("mouseover", () => {
+  Object.assign(link.style, {
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center",
+    "width": "128px",
+    "height": "32px",
+    "borderRadius": "8px",
+    "fontSize": "24px",
+    "fontWeight": "600",
+    "textDecoration": "none",
+    "color": "#1a1a1a",
+    "cursor": "pointer",
+    "userSelect": "none",
+    "transition": "all 200ms ease-in-out",
+    "textAlign": "center",
+    "scale": ".9",
+    "backgroundColor": "#cccccc",
+    "Transition": "all 200ms ease-in-out",
+  })
+})
 
-// const container = document.getElementById('app');
+link.addEventListener("mouseout", () => {
+  Object.assign(link.style, {
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center",
+    "width": "128px",
+    "height": "32px",
+    "borderRadius": "8px",
+    "fontSize": "24px",
+    "fontWeight": "600",
+    "textDecoration": "none",
+    "color": "#f2f2f2",
+    "backgroundColor": "#1f8063",
+    "scale": "1",
+    "cursor": "pointer",
+    "userSelect": "none",
+    "transition": "all 200ms ease-in-out",
+    "textAlign": "center",
+    "Transition": "all 200ms ease-in-out",
+  })
+})
 
-// container.appendChild(link);
-
-// const box = document.querySelector('.box');
 
 
-// // console.log(media);
+link.appendChild(conteudo);
 
-// function responsive() {
-//   const media = window.matchMedia('(max-width: 540px)');
+const container = document.getElementById('app');
 
-//   if (media.matches) {
-//     console.log('mobile');
-//   } else {
-//     console.log("desktop");
-//   }
-// }
+container.appendChild(link);
+
+const box = document.querySelector('.box');
 
 
-// // window.addEventListener("resize", responsive);
+// console.log(media);
 
-// const rotate = (e) => {
-//   e.target.classList.toggle('active');
-// }
+function responsive() {
+  const media = window.matchMedia('(max-width: 540px)');
 
-// box.addEventListener("dblclick", rotate);
+  if (media.matches) {
+    console.log('mobile');
+  } else {
+    console.log("desktop");
+  }
+}
 
-// function callback(e) {
-//   // console.log(e.key);
 
-//   if (e.key === 'r') {
-//     box.classList.add('r')
-//     box.classList.remove('g', 'b', 'y')
-//   } else if (e.key === 'g') {
-//     box.classList.add('g')
-//     box.classList.remove('r', 'b', 'y')
-//   } else if (e.key === 'b') {
-//     box.classList.add('b')
-//     box.classList.remove('r', 'g', 'y')
-//   } else if (e.key === 'y') {
-//     box.classList.add('y')
-//     box.classList.remove('r', 'g', 'b')
-//   } else {
-//     box.classList.remove('r', 'g', 'b', 'y')
-//   }
-// }
+// window.addEventListener("resize", responsive);
 
-// window.addEventListener("keydown", callback);
+const rotate = (e) => {
+  e.target.classList.toggle('active');
+}
 
-// }
+box.addEventListener("dblclick", rotate);
+
+function callback(e) {
+  // console.log(e.key);
+
+  if (e.key === 'r') {
+    box.classList.add('r')
+    box.classList.remove('g', 'b', 'y')
+  } else if (e.key === 'g') {
+    box.classList.add('g')
+    box.classList.remove('r', 'b', 'y')
+  } else if (e.key === 'b') {
+    box.classList.add('b')
+    box.classList.remove('r', 'g', 'y')
+  } else if (e.key === 'y') {
+    box.classList.add('y')
+    box.classList.remove('r', 'g', 'b')
+  } else {
+    box.classList.remove('r', 'g', 'b', 'y')
+  }
+}
+
+window.addEventListener("keydown", callback);
+*/
+}
 
 //JSON
 {
-///JSON.parse(); // Transforma o texto JSON em um objeto
-///JSON.stringify(); // Transforma um objeto em um texto JSON
+  /*
+  /JSON.parse(); // Transforma o texto JSON em um objeto
+  /JSON.stringify(); // Transforma um objeto em um texto JSON
 
-// const json = JSON.parse('{"id": "1", "nome": "Notebook Dell", "Modelo": "Gaming", "Quantidade": 5}');
+  const json = JSON.parse('{"id": "1", "nome": "Notebook Dell", "Modelo": "Gaming", "Quantidade": 5}');
 
-// console.log(json);
+  console.log(json);
 
-// function produto(id, nome, cor, quantidade) {
-//   this.id = id;
-//   this.nome = nome;
-//   this.cor = cor;
-//   this.quantidade = quantidade;
-// }
+  function produto(id, nome, cor, quantidade) {
+    this.id = id;
+    this.nome = nome;
+    this.cor = cor;
+    this.quantidade = quantidade;
+  }
 
-// const caneta = new produto(1, "caneta", "Azul", 10);
+  const caneta = new produto(1, "caneta", "Azul", 10);
 
-// console.log(caneta);
+  console.log(caneta);
 
-// const canetaJson = JSON.stringify(caneta);
+  const canetaJson = JSON.stringify(caneta);
 
-// console.log(canetaJson);
+  console.log(canetaJson);
+  */
 }
 
 const container2 = document.querySelector(".container-2");
 
+function seErrar(error) {
+  const img = document.createElement("img");
+  img.src = "https://compras.wiki.ufsc.br/images/5/56/Erro.png";
+  container2.appendChild(img);
+  img.style.width = "200px";
+  img.style.height = "200px";
+  img.style.borderRadius = "50%";
+  img.style.margin = "0 auto";
+
+  console.log(error);
+}
+
+function seFuncionar(response) {
+  const data = response.data;
+  const img = document.createElement("img");
+  img.src = data.avatar_url;
+  container2.appendChild(img);
+  img.style.width = "200px";
+  img.style.height = "200px";
+  img.style.borderRadius = "50%";
+  img.style.border = "5px solid #f2f2f2";
+  img.style.margin = "0 auto";
+  img.style.cursor = "pointer";
+
+  img.addEventListener("mouseover", () => {
+    img.style.filter = "grayscale(100%)";
+    img.style.scale = "0.9";
+    img.style.transition = "all 500ms ease-in-out";
+  })
+
+  img.addEventListener("mouseout", () => {
+    img.style.filter = "none";
+    img.style.scale = "1";
+    img.style.transition = "all 500ms ease-in-out";
+  })
+
+  img.addEventListener("click", () => {
+    window.open(data.html_url, "_blank");
+  })
+
+  // console.log(response)
+}
+
 //AJAX
 {
-// let xhr = new XMLHttpRequest();
+  // let xhr = new XMLHttpRequest();
 
-// xhr.open("GET", "https://api.github.com/users/NetoRusso");
-// xhr.send(null);
+  // xhr.open("GET", "https://api.github.com/users/NetoRusso");
+  // xhr.send(null);
 
 
 
-// xhr.onreadystatechange = () => {
-//   if(xhr.readyState == 4) {
-//     const data = JSON.parse(xhr.responseText);
-//     const img = document.createElement("img");
-//     img.src = data.avatar_url;
-//     container2.appendChild(img);
-//     img.style.width = "200px";
-//     img.style.height = "200px";
-//     img.style.borderRadius = "50%";
-//     img.style.border = "5px solid #f2f2f2";
-//     img.style.margin = "0 auto";
-//     img.style.cursor = "pointer";
+  // xhr.onreadystatechange = () => {
+  //   if(xhr.readyState == 4) {
+  //     const data = JSON.parse(xhr.responseText);
+  //     const img = document.createElement("img");
+  //     img.src = data.avatar_url;
+  //     container2.appendChild(img);
+  //     img.style.width = "200px";
+  //     img.style.height = "200px";
+  //     img.style.borderRadius = "50%";
+  //     img.style.border = "5px solid #f2f2f2";
+  //     img.style.margin = "0 auto";
+  //     img.style.cursor = "pointer";
 
-//     img.addEventListener("mouseover", () => {
-//       img.style.filter = "grayscale(100%)";
-//       img.style.scale = "0.9";
-//       img.style.transition = "all 500ms ease-in-out";
-//     })
+  //     img.addEventListener("mouseover", () => {
+  //       img.style.filter = "grayscale(100%)";
+  //       img.style.scale = "0.9";
+  //       img.style.transition = "all 500ms ease-in-out";
+  //     })
 
-//     img.addEventListener("mouseout", () => {
-//       img.style.filter = "none";
-//       img.style.scale = "1";
-//       img.style.transition = "all 500ms ease-in-out";
-//     })
+  //     img.addEventListener("mouseout", () => {
+  //       img.style.filter = "none";
+  //       img.style.scale = "1";
+  //       img.style.transition = "all 500ms ease-in-out";
+  //     })
 
-//     img.addEventListener("click", () => {
-//       window.open(data.html_url, "_blank");
-//     })
+  //     img.addEventListener("click", () => {
+  //       window.open(data.html_url, "_blank");
+  //     })
 
-//   }
-// }
+  //   }
+  // }
 
 }
 
-let minhaPromise = function () {
-  return new Promise(function (resolve, reject) {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://api.gihub.com/users/NetoRusso");
-    xhr.send(null);
-
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState == 4) {
-
-        if (xhr.status == 200) {
-          resolve(JSON.parse(xhr.responseText));
-        } else {
-          reject('Erro!');
+//Promises
+{
+  /*
+  let minhaPromise = function () {
+    return new Promise(function (resolve, reject) {
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", "https://api.github.com/users/NetoRusso");
+      xhr.send(null);
+  
+      xhr.onreadystatechange = () => {
+        if (xhr.readyState == 4) {
+  
+          if (xhr.status == 200) {
+            resolve(JSON.parse(xhr.responseText));
+          } else {
+            reject('Erro!');
+          }
         }
       }
-    }
-  })
-}
-
-function seErro() {
-  const img = document.createElement("img");
-    img.src = "https://compras.wiki.ufsc.br/images/5/56/Erro.png";
-    container2.appendChild(img);
-    img.style.width = "200px";
-    img.style.height = "200px";
-    img.style.borderRadius = "50%";
-    // img.style.border = "5px solid #f2f2f2";
-    img.style.margin = "0 auto";
-    // img.style.cursor = "pointer";
-}
-
-minhaPromise()
-  .then(function (response) {
-    const data = response;
+    })
+  }
+  
+  function seErro() {
     const img = document.createElement("img");
-    img.src = data.avatar_url;
-    container2.appendChild(img);
-    img.style.width = "200px";
-    img.style.height = "200px";
-    img.style.borderRadius = "50%";
-    img.style.border = "5px solid #f2f2f2";
-    img.style.margin = "0 auto";
-    img.style.cursor = "pointer";
+      img.src = "https://compras.wiki.ufsc.br/images/5/56/Erro.png";
+      container2.appendChild(img);
+      img.style.width = "200px";
+      img.style.height = "200px";
+      img.style.borderRadius = "50%";
+      // img.style.border = "5px solid #f2f2f2";
+      img.style.margin = "0 auto";
+      // img.style.cursor = "pointer";
+  }
+  
+  minhaPromise()
+    .then(function (response) {
+      const data = response;
+      const img = document.createElement("img");
+      img.src = data.avatar_url;
+      container2.appendChild(img);
+      img.style.width = "200px";
+      img.style.height = "200px";
+      img.style.borderRadius = "50%";
+      img.style.border = "5px solid #f2f2f2";
+      img.style.margin = "0 auto";
+      img.style.cursor = "pointer";
+  
+      img.addEventListener("mouseover", () => {
+        img.style.filter = "grayscale(100%)";
+        img.style.scale = "0.9";
+        img.style.transition = "all 500ms ease-in-out";
+      })
+  
+      img.addEventListener("mouseout", () => {
+        img.style.filter = "none";
+        img.style.scale = "1";
+        img.style.transition = "all 500ms ease-in-out";
+      })
+  
+      img.addEventListener("click", () => {
+        window.open(data.html_url, "_blank");
+      })
+  
+    }).catch(function (error) {
+      seErro();
+      console.log(error);
+    });
+  */
+}
 
-    img.addEventListener("mouseover", () => {
-      img.style.filter = "grayscale(100%)";
-      img.style.scale = "0.9";
-      img.style.transition = "all 500ms ease-in-out";
-    })
+//Axios - Para usar no modo vanilla precisa do CDN =
+//  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    img.addEventListener("mouseout", () => {
-      img.style.filter = "none";
-      img.style.scale = "1";
-      img.style.transition = "all 500ms ease-in-out";
-    })
 
-    img.addEventListener("click", () => {
-      window.open(data.html_url, "_blank");
-    })
-
+axios.get("https://api.github.com/users/NetoRusso")
+  .then(function (response) {
+    seFuncionar(response);
   }).catch(function (error) {
-    seErro();
-    console.log(error);
+    seErrar();
   });
 
+  //Modulos
+{
+  /*
+  import retangulo from './modulos/retangulo.js';
+  import { upperName } from './modulos/string.js';
+  
+    console.log(retangulo.areaRetangulo(3, 4))
+    console.log(retangulo.perimetroRetangulo(3, 4))
+    console.log(upperName('NetoRusso'))
+  */
+}
 
+//Desestruturação
+
+{
+  /*
+  function mouseMove({ clientX, clientY }) {
+    console.log(clientX, clientY);
+  }
+  
+  document.documentElement.addEventListener("mousemove", mouseMove);
+  
+  const carros = [ 'volks', 'fiat', 'bmw', 'audi' ]
+  
+  const [carro1, carro2, carro3, carro4] = carros;
+  
+  console.log(carro3);
+  */
+}

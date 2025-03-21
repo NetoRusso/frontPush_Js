@@ -157,6 +157,7 @@ body {
   margin-top: 32px;
   top: 32px;
   left: 32px;
+  z-index: 5;
 }
 .return img {
   width: 100%;

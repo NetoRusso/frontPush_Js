@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Neto Russo">
+  <title>Prática To Do List</title>
+  <link rel="stylesheet" href="./todolist.css">
+</head>
+<body>
+  <header>
+    <a class="return" href="../../index.html"><img src='../../assets/home.svg' alt="Icon de home"></a>
+  </header>
+  <main>
+    <section class="container">
+      <h1>
+        To do list com JS
+      </h1>
+
+      <ul class="container__lista">
+
+      </ul>
+
+      <form action="submit" class="container__form">
+
+        <label for="task"> Digite um novo item para a lista: </label>
+        <div class="container__form-add">
+        <input type="text" id="task" name="task" placeholder="Digite um novo item" required>
+        <button type="submit" class="container__form-add-btn">Adicionar</button>
+        </div>
+      </form>
+
+      <h6>*Bônus: persiste em local storage</h6>
+    </section>
+  </main>
+  <script type="module" src="../../js/todolist.js"></script>
+</body>
+</html>

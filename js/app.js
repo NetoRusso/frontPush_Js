@@ -9,54 +9,54 @@
 
 // ============================================================================
 {
-// const titulo = document.querySelector('.count-title');
-// const label = document.querySelector('.count-label');
-// const limite = document.querySelector('#count');
-// const btn = document.querySelector('#count-btn');
-// const resultado = document.querySelector('.resultado');
-// const valor = document.querySelector('#count-value');
-// const tabela = document.querySelector(".tabela");
-// const acumulado = document.querySelector(".acumulado");
+  // const titulo = document.querySelector('.count-title');
+  // const label = document.querySelector('.count-label');
+  // const limite = document.querySelector('#count');
+  // const btn = document.querySelector('#count-btn');
+  // const resultado = document.querySelector('.resultado');
+  // const valor = document.querySelector('#count-value');
+  // const tabela = document.querySelector(".tabela");
+  // const acumulado = document.querySelector(".acumulado");
 
-// let items = document.querySelectorAll('grid-item');
+  // let items = document.querySelectorAll('grid-item');
 
-// let acumuladoValor = 0;
+  // let acumuladoValor = 0;
 
-// let j = 0;
+  // let j = 0;
 
-// btn.addEventListener("click", () => {
-  
-  
-//   for (let i = 0; i <= limite.value; i++) { 
-//     if ( i > 0) {
-//       tabela.innerHTML += `<div class="grid-item item-${i}" onClick="depositar(${i})" data-value = ${i} > <p> ${i.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} </p> </div>`;
-//       j += i;
-//     }
-//   }
-  
-//   valor.innerText = j.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+  // btn.addEventListener("click", () => {
 
-//   resultado.style.display = "block";
-//   btn.style.display = "none";
-//   limite.style.display = "none";
-//   label.style.display = "none";
-//   titulo.innerText = 'Poupando...';
 
-//   acumulado.innerText = `
-//     Até o momento você juntou ${acumuladoValor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} em sua poupança. \n Até o momento atingiu ${(acumuladoValor/j*100).toFixed(2)}% da sua Meta`;
-//   ;
+  //   for (let i = 0; i <= limite.value; i++) { 
+  //     if ( i > 0) {
+  //       tabela.innerHTML += `<div class="grid-item item-${i}" onClick="depositar(${i})" data-value = ${i} > <p> ${i.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} </p> </div>`;
+  //       j += i;
+  //     }
+  //   }
 
-// })
+  //   valor.innerText = j.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 
-// const depositar = (item) => {
-//   const valor = document.querySelector(`.item-${item}`);
-//   acumuladoValor += Number(valor.dataset.value);
-//   console.log(acumuladoValor);
-//   acumulado.innerText = `
-//     Até o momento você juntou ${acumuladoValor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} em sua poupança. \n Até o momento atingiu ${(acumuladoValor/j*100).toFixed(2)}% da sua Meta`;
-//   ;
-//   valor.classList.add('active');
-// }
+  //   resultado.style.display = "block";
+  //   btn.style.display = "none";
+  //   limite.style.display = "none";
+  //   label.style.display = "none";
+  //   titulo.innerText = 'Poupando...';
+
+  //   acumulado.innerText = `
+  //     Até o momento você juntou ${acumuladoValor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} em sua poupança. \n Até o momento atingiu ${(acumuladoValor/j*100).toFixed(2)}% da sua Meta`;
+  //   ;
+
+  // })
+
+  // const depositar = (item) => {
+  //   const valor = document.querySelector(`.item-${item}`);
+  //   acumuladoValor += Number(valor.dataset.value);
+  //   console.log(acumuladoValor);
+  //   acumulado.innerText = `
+  //     Até o momento você juntou ${acumuladoValor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} em sua poupança. \n Até o momento atingiu ${(acumuladoValor/j*100).toFixed(2)}% da sua Meta`;
+  //   ;
+  //   valor.classList.add('active');
+  // }
 
 }
 // ===============================================================================//
@@ -89,10 +89,10 @@ const selecionarAula = (event) => {
 }
 
 
-titulo.addEventListener( "click", passarAula );
+titulo.addEventListener("click", passarAula);
 
 aulas.forEach(aula => {
-  aula.addEventListener("click", selecionarAula );
+  aula.addEventListener("click", selecionarAula);
 })
 
 // titulo.setAttribute('test', 'e Agora?');
@@ -226,8 +226,8 @@ aulas.forEach(aula => {
 
 // }
 
-
-
+//JSON
+{
 ///JSON.parse(); // Transforma o texto JSON em um objeto
 ///JSON.stringify(); // Transforma um objeto em um texto JSON
 
@@ -249,18 +249,87 @@ aulas.forEach(aula => {
 // const canetaJson = JSON.stringify(caneta);
 
 // console.log(canetaJson);
+}
 
-let xhr = new XMLHttpRequest();
 const container2 = document.querySelector(".container-2");
 
-xhr.open("GET", "https://api.github.com/users/NetoRusso");
-xhr.send(null);
+//AJAX
+{
+// let xhr = new XMLHttpRequest();
+
+// xhr.open("GET", "https://api.github.com/users/NetoRusso");
+// xhr.send(null);
 
 
 
-xhr.onreadystatechange = () => {
-  if(xhr.readyState == 4) {
-    const data = JSON.parse(xhr.responseText);
+// xhr.onreadystatechange = () => {
+//   if(xhr.readyState == 4) {
+//     const data = JSON.parse(xhr.responseText);
+//     const img = document.createElement("img");
+//     img.src = data.avatar_url;
+//     container2.appendChild(img);
+//     img.style.width = "200px";
+//     img.style.height = "200px";
+//     img.style.borderRadius = "50%";
+//     img.style.border = "5px solid #f2f2f2";
+//     img.style.margin = "0 auto";
+//     img.style.cursor = "pointer";
+
+//     img.addEventListener("mouseover", () => {
+//       img.style.filter = "grayscale(100%)";
+//       img.style.scale = "0.9";
+//       img.style.transition = "all 500ms ease-in-out";
+//     })
+
+//     img.addEventListener("mouseout", () => {
+//       img.style.filter = "none";
+//       img.style.scale = "1";
+//       img.style.transition = "all 500ms ease-in-out";
+//     })
+
+//     img.addEventListener("click", () => {
+//       window.open(data.html_url, "_blank");
+//     })
+
+//   }
+// }
+
+}
+
+let minhaPromise = function () {
+  return new Promise(function (resolve, reject) {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://api.gihub.com/users/NetoRusso");
+    xhr.send(null);
+
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState == 4) {
+
+        if (xhr.status == 200) {
+          resolve(JSON.parse(xhr.responseText));
+        } else {
+          reject('Erro!');
+        }
+      }
+    }
+  })
+}
+
+function seErro() {
+  const img = document.createElement("img");
+    img.src = "https://compras.wiki.ufsc.br/images/5/56/Erro.png";
+    container2.appendChild(img);
+    img.style.width = "200px";
+    img.style.height = "200px";
+    img.style.borderRadius = "50%";
+    // img.style.border = "5px solid #f2f2f2";
+    img.style.margin = "0 auto";
+    // img.style.cursor = "pointer";
+}
+
+minhaPromise()
+  .then(function (response) {
+    const data = response;
     const img = document.createElement("img");
     img.src = data.avatar_url;
     container2.appendChild(img);
@@ -276,7 +345,7 @@ xhr.onreadystatechange = () => {
       img.style.scale = "0.9";
       img.style.transition = "all 500ms ease-in-out";
     })
-    
+
     img.addEventListener("mouseout", () => {
       img.style.filter = "none";
       img.style.scale = "1";
@@ -287,6 +356,9 @@ xhr.onreadystatechange = () => {
       window.open(data.html_url, "_blank");
     })
 
-  }
-}
+  }).catch(function (error) {
+    seErro();
+    console.log(error);
+  });
+
 

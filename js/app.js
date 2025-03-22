@@ -441,7 +441,6 @@ axios.get("https://api.github.com/users/NetoRusso")
 }
 
 //Desestruturação
-
 {
   /*
   function mouseMove({ clientX, clientY }) {
